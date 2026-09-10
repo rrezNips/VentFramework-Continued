@@ -60,10 +60,8 @@ public class VersionCheck
                 Vents.BlockClient(Vents.RootAssemby, player.GetClientId());
                 break;
             case HandshakeResult.Kick:
-                AmongUsClient.Instance.KickPlayer(player.GetClientId(), false);
                 break;
             case HandshakeResult.Ban:
-                AmongUsClient.Instance.KickPlayer(player.GetClientId(), true);
                 break;
             case HandshakeResult.PassDoNothing:
                 VersionControl.Instance.PassedClients.Add(player.GetClientId());
